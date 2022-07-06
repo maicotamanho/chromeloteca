@@ -6,7 +6,7 @@
 
 let s = document.createElement('script');
 
-s.src = chrome.extension.getURL('scripts/inject.js');
+s.src = chrome.runtime.getURL('scripts/inject.js');
 s.onload = () => {
     s.parentNode.removeChild(s);
 };
